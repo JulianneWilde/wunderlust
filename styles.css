@@ -47,3 +47,35 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+:root {
+	--yellow: #f6d64a;
+	--teal: #55bcd5;
+	--purple: #9b26b0;
+	--blue: #499bd2;
+	--dark-gray: #222222;
+	--light-gray: #eaeaea;
+	--white: #ffffff;
+	--black: #000000;
+}
+#skip {
+	position: absolute;
+	
+	overflow: hidden;
+}
+@media screen and (min-width:500px){
+	header div{
+		background-color: var(--white);
+		grid-template-columns: 1fr 4fr;
+		align-items: center;
+		column-gap: 1rem;
+	}
+
+}
+
+@media screen and (min-width: 650px){
+
+}
+@media screen and (min-width: 980px){
+
+}
