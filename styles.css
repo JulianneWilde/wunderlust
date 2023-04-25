@@ -47,6 +47,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* End of reset*/
 
 @import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
 
@@ -92,6 +93,21 @@ form {
 	color: var(--black);
 	font-size: 1.1em;
 }
+input, label, .custom-select {
+	display: block;
+	width: 100%;
+}
+.required {
+	display: inline-block;
+	color: var(--purple);
+	font-size: 1em;
+	font-weight: bold;
+}
+label, legend {
+	padding: 7px;
+	padding-left: 0.5rem;
+	margin: 0.75em 0 .25em 0;
+}
 #mySubmit {
 	background-color: var(--purple);
 	color: var(--white);
@@ -102,7 +118,25 @@ form {
 	margin-left: 1rem;
 	font-family: 'Montserrat', sans-serif;
 }
+footer {
+	background-color: var(--light-gray);
+	padding: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+}
+footer a {
+	text-decoration: none;
+	color: var(--black);
+}
 
+/*Start of Mobile styles*/
+@media screen and (max-width: 320px) {
+
+	
+}
+/*End of Mobile styles*/
+/*Start of small screen styles*/
 @media screen and (min-width:500px){
 	header div{
 		background-color: var(--white);
@@ -114,10 +148,26 @@ form {
 		font-size: 48px;
 	}
 }
-
+/*End of small screen styles*/
+/*Start of medium screen styles*/
 @media screen and (min-width: 650px){
 
 }
+/*End of medium screen styles*/
+/*Start of large screen styles*/
 @media screen and (min-width: 980px){
+	#testimonals div{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	#names, #nums, #selects {
+		display: block;
+	}
 
+	form {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 3rem;
+	}
 }
+/*End of large screen styles*/
